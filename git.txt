@@ -1,0 +1,70 @@
+git --help , git --version (mo¿na sprawdziæ czy git dzia³a)
+cls -czyszczenie konsoli
+git config --global user.name "Justyna Makuch" (wstêpna konfiguracja)
+git config --global user.email justyna@gmal.com
+git config --global color.ui true
+mkdir projekt(tworzenie nowego projektu)
+//cd folder ls (otwarcie plików)
+
+git init //tworzenie rep.
+git status (spr statusu)
+
+dodawanie do œledzenia:
+git add index.html
+git add . (dodawanie wszystkich plików do œledzenia)
+git rm --cached index.html (usuwanie pliku ze œledznia) potem commit
+
+dodanie commita
+git commit
+nastêpnie escape
+nastêpnie :wq
+
+lub git commit -m "wiadomosc"
+
+git log (sprawdzenie jakie commity zapisane)
+
+zamiast po ka¿dej zmianie w pliku: git add . 
+git commit -m "wiadomoœæ"
+
+lepiej: 
+git commit -am "wiadomosc"
+
+przywracanie wersji pliku
+git log, kopiujemy hash
+git checkout hash -- index.html
+
+powrót do ostatnio dodanego commita
+git checkout HEAD -- index.html
+
+ignorowanie plików
+tworzymy w folderze plik .gitignore (w tym foledrze np. *.txt !README.txt)
+git add .
+git commit -m "dodano gitignore i readme"
+
+
+git diff (pokazywanie ró¿nic w plikach  miedzy tym co w commicie a tym co w naszych plikach)
+git diff css/style.css (w konkretnym pliku)
+git diff hash -- css/style.css (porównanie ró¿nic do innego commita)
+git diff HEAD
+
+
+git branch (pokazuje ga³êzie)
+git branch nazwa-galezi (tworzenie)
+git checkout nazwa-galezi(przeskoczenie na inna galaz)
+code nazwa-pliku (tworzymy plik i otwieramy)
+git checkout master
+git checkout -b nazwa-galezi (tworzymy nowa galaz i od razu na nia przechodzimy)
+git branch -d nazwa-galezi (zeby usun¹c galaz trzeba przejœæ na inna)
+
+git merge alert-message (laczenie galezi)
+
+:q (exit w cmd)
+
+
+ git remote add origin git@github.com:justynamak/Java-Script-30.git
+git remote -v
+
+git push -u origin master
+
+git clean -nd   usuwa te pliki , które nigdy nie zosta³y dodane do repozytorium
+git reset usuwa pliki z staging area(odwrtotonoœæ git add)s

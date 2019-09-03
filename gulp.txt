@@ -1,0 +1,4 @@
+najpier gulpa instalujemy globalnie
+npm install -g gulp-cli
+
+npm install --save-dev gulp gulp-sass gulp-sourcemaps gulp-postcss autoprefixer cssnano gulp-concat gulp-uglify gulp-replace

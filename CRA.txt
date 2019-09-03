@@ -1,0 +1,11 @@
+npx-create-react-app folder(. - jesli w tym samym katalogu)
+cd folder
+npm start
+
+sfc -skrót komponent funkcyjny
+
+https://vod.tvp.pl/video/rodzinkapl,odc-264-jestesmy-razem,42781327
+
+imr - skrót import react
+
+npm install react-router-dom

@@ -1,0 +1,73 @@
+npm init -y
+npm install webpack --save-dev
+npm install webpack-cli --save-dev
+
+"dev": "webpack --mode=development" //tworzymy zadania , odpalamy npm run dev
+"build": "webpack --mode=production" //npm run build
+
+tworzymy plik webpack.config.js
+
+const path = require('path');
+
+module.exports = {
+  entry: './path/to/my/entry/file.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  }
+};
+
++nastêpnie babel loader 
+
+
+npm install -D babel-loader @babel/core @babel/preset-env -D
+
+w webpack config:
+module: {
+  rules: [
+    {
+      test: /\.m?js$/,
+      exclude: /(node_modules|bower_components)/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: ['@babel/preset-env']
+        }
+      }
+    }
+  ]
+}
+
++SASS LOADER
+
+npm install sass-loader node-sass style-loader css-loader --save-dev
+file loader url loader
+npm install file-loader --save-dev
+extract text webpack plugin
++ do webpack config rules
+
+test: /\.scss$/,
+            use: [
+                "style-loader", // creates style nodes from JS strings
+                "css-loader", // translates CSS into CommonJS
+                "sass-loader" // compiles Sass to CSS, using Node Sass by default
+            ]
+
++plugin html webpack plugin
+ npm i --save-dev html-webpack-plugin
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
++
+plugins: [
+    new HtmlWebpackPlugin({template: 'src/assets/test.html'})
+  ]
+
++ mo¿na zainstalowaæ serwer live
+webpack dev server
+npm install webpack-dev-server --save-dev
+dodajemy zadanie w konfiguracji (scripts):"dev":"webpack-dev-server --mode=development"
+terminal podaje adres lokalhost
+CTRL+C zatrzymanie 
+
+copy webpack plugin -obrazki from:src/assets  to:/asssets
+clean webpack plugin -czyszczenie

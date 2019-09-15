@@ -1,30 +1,30 @@
-git --help , git --version (mo¿na sprawdziæ czy git dzia³a)
+git --help , git --version (moÅ¼na sprawdziÄ‡ czy git dziaÅ‚a)
 cls -czyszczenie konsoli
-git config --global user.name "Justyna Makuch" (wstêpna konfiguracja)
+git config --global user.name "Justyna Makuch" (wstÄ™pna konfiguracja)
 git config --global user.email justyna@gmal.com
 git config --global color.ui true
 mkdir projekt(tworzenie nowego projektu)
-//cd folder ls (otwarcie plików)
+//cd folder ls (otwarcie plikÃ³w)
 
 git init //tworzenie rep.
 git status (spr statusu)
 
-dodawanie do œledzenia:
+dodawanie do Å›ledzenia:
 git add index.html
-git add . (dodawanie wszystkich plików do œledzenia)
-git rm --cached index.html (usuwanie pliku ze œledznia) potem commit
+git add . (dodawanie wszystkich plikÃ³w do Å›ledzenia)
+git rm --cached index.html (usuwanie pliku ze Å›ledznia) potem commit
 
 dodanie commita
 git commit
-nastêpnie escape
-nastêpnie :wq
+nastÄ™pnie escape
+nastÄ™pnie :wq
 
 lub git commit -m "wiadomosc"
 
 git log (sprawdzenie jakie commity zapisane)
 
-zamiast po ka¿dej zmianie w pliku: git add . 
-git commit -m "wiadomoœæ"
+zamiast po kaÅ¼dej zmianie w pliku: git add . 
+git commit -m "wiadomoÅ›Ä‡"
 
 lepiej: 
 git commit -am "wiadomosc"
@@ -33,28 +33,28 @@ przywracanie wersji pliku
 git log, kopiujemy hash
 git checkout hash -- index.html
 
-powrót do ostatnio dodanego commita
+powrÃ³t do ostatnio dodanego commita
 git checkout HEAD -- index.html
 
-ignorowanie plików
+ignorowanie plikÃ³w
 tworzymy w folderze plik .gitignore (w tym foledrze np. *.txt !README.txt)
 git add .
 git commit -m "dodano gitignore i readme"
 
 
-git diff (pokazywanie ró¿nic w plikach  miedzy tym co w commicie a tym co w naszych plikach)
+git diff (pokazywanie rÃ³Å¼nic w plikach  miedzy tym co w commicie a tym co w naszych plikach)
 git diff css/style.css (w konkretnym pliku)
-git diff hash -- css/style.css (porównanie ró¿nic do innego commita)
+git diff hash -- css/style.css (porÃ³wnanie rÃ³Å¼nic do innego commita)
 git diff HEAD
 
 
-git branch (pokazuje ga³êzie)
+git branch (pokazuje gaÅ‚Ä™zie)
 git branch nazwa-galezi (tworzenie)
 git checkout nazwa-galezi(przeskoczenie na inna galaz)
 code nazwa-pliku (tworzymy plik i otwieramy)
 git checkout master
 git checkout -b nazwa-galezi (tworzymy nowa galaz i od razu na nia przechodzimy)
-git branch -d nazwa-galezi (zeby usun¹c galaz trzeba przejœæ na inna)
+git branch -d nazwa-galezi (zeby usunÄ…c galaz trzeba przejÅ›Ä‡ na inna)
 
 git merge alert-message (laczenie galezi)
 
@@ -66,15 +66,15 @@ git remote -v
 
 git push -u origin master
 
-git clean -nd   usuwa te pliki , które nigdy nie zosta³y dodane do repozytorium
-git reset usuwa pliki z staging area(odwrtotonoœæ git add)s
+git clean -nd   usuwa te pliki , ktÃ³re nigdy nie zostaÅ‚y dodane do repozytorium
+git reset usuwa pliki z staging area(odwrtotonoÅ›Ä‡ git add)s
 git reset --hard (przywraca pliki do ostatniego dodanego commita)
 
-git commit --amend (edycja commita) potem git push --force (tylko jeœli sami praujemy na branchu)
+git commit --amend (edycja commita) potem git push --force (tylko jeÅ›li sami praujemy na branchu)
 
 git reflog
 
 git stash
 git stash list
-git stash pop /albo git stash apply, git stash pop
+git stash pop /albo git stash apply, git stash drop
 

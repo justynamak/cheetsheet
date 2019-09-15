@@ -68,3 +68,13 @@ git push -u origin master
 
 git clean -nd   usuwa te pliki , które nigdy nie zosta³y dodane do repozytorium
 git reset usuwa pliki z staging area(odwrtotonoœæ git add)s
+git reset --hard (przywraca pliki do ostatniego dodanego commita)
+
+git commit --amend (edycja commita) potem git push --force (tylko jeœli sami praujemy na branchu)
+
+git reflog
+
+git stash
+git stash list
+git stash pop /albo git stash apply, git stash pop
+

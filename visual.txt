@@ -1,9 +1,12 @@
 Visual rozszerzenia:
 
-cobalt theme official
+cobalt2 theme official wesbos
 live server
 material icon theme
 material theme
 mithril emmet
 prettier
 simple react snippets
+highlighting matching tag vincaslt
+
+preferences > keyboard shortcuts > Emmet wrap with abreviations (ctrl + shift + a)
